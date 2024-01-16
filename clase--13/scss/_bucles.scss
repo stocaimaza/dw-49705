@@ -1,0 +1,24 @@
+/*BUCLES*/
+
+//Vamos a usar un bucle por conteo llamado for para aplicar estilos a los H: 
+
+@for $i from 2 through 6 {
+    h#{$i} {
+        font-size: 2rem * $i;
+    }
+}
+
+//to = termina en el numerito anterior
+//through = termina en ese numero. 
+
+//Listas: 
+//$lista: dato1, dato2, dato3; 
+
+$colores: "pink", "green", "black";
+
+@each $color in $colores {
+    .#{$color} {
+        color: #{$color};
+    }
+}
+

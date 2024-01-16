@@ -1,0 +1,96 @@
+/*Comentarios son así */
+
+h1 {
+    color: red;
+}
+
+/*Trabajamos con clases*/
+/*Cuando trabajamos con clases le tengo que colocar el . antes del nombre*/
+
+.verde {
+    color: green;
+}
+
+/*Trabajamos con los Ids*/
+/*Cuando trabajamos con ids usamos el # antes del nombre*/
+
+#final {
+    color: blueviolet;
+}
+
+/* REGLAS DE CSS */
+
+/*Padres e hijos */
+
+footer p {
+    color: aquamarine;
+}
+
+/*Herencia*/
+/*Ocurre cuando aplico una propiedad a una etiqueta padre, esta le hereda el estilo a sus etiquetas hijitos */
+
+footer {
+    font-size: 30px!important;
+}
+
+/*Cascada*/
+/*La última instrucción es la que predomina*/
+/*ojota! El important tratemos de no usar, solo en caso de emergencia*/
+
+footer {
+    font-size: 50px;
+}
+
+/*PROPIEDADES DE CSS MAS UTILIZADAS*/
+
+/*Estilos a los textos: */
+
+.texto {
+    /*Alinear texto*/
+    text-align: center;
+
+    /*El peso de la fuente, ejemplo en negrita */
+    font-weight: bold;
+
+    /*Puedo elegir una fuenta*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*ESTILOS PARA LOS ENLACES */
+
+a {
+    /*Eliminamos el subrayado*/
+    text-decoration: none;
+
+    /*Lo podemos pasar a mayus*/
+    text-transform: uppercase;
+
+    /*Color a la fuente*/
+    color: black;
+}
+
+/*LISTAS*/
+
+li {
+    /*Elimino la viñeta fea*/
+    list-style: none;
+}
+
+/*FONDOS*/
+
+body {
+    /*Color de fondo*/
+    background-color: bisque;
+
+    /*Si quiero colocar una imagen de fondo */
+    background-image: url("../img/messi.webp");
+
+    /*Si queres que la imagen no se repita */
+    background-repeat: no-repeat;
+
+    /*La pueden posicionar en el documento*/
+    background-position: center;
+
+    /*Tamaño*/
+    background-size: cover;
+}

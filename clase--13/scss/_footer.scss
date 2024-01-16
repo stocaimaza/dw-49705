@@ -1,0 +1,14 @@
+//Footer 
+
+footer {
+    text-align: center;
+    background-color: antiquewhite;
+
+    p {
+        color: red;
+    }
+
+    a {
+        @include anclas;
+    }
+}

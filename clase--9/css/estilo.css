@@ -1,0 +1,57 @@
+/*Header*/
+
+.imgLogo {
+    width: 150px;
+}
+
+.encabezado {
+    background-color: #fff;
+    border-top: 20px solid #c1101a;
+}
+
+.menuNav a {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border-left: 1px solid #c1101a;
+    border-right: 1px solid #c1101a;
+    padding: 0;
+}
+
+.menuNav a:hover {
+    background-color: #c23b41;
+    color: #fafafa;
+}
+
+/*Productos*/
+
+.productos {
+    background-color: #c1101a;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.productos h2 {
+    font-size: 3rem;
+}
+
+/*Botones*/
+
+.btnMarolio {
+    background-color: #c1101a;
+    color: #fafafa;
+}
+
+.btnMarolio:hover {
+    background-color: #c23b41;
+    color: #fafafa;
+}
+
+
+/*Aclaración: no es muy recomendado manipular las clases de Bootstrap, siempre es mejor aplicar nuestras clases que pisen el estilo*/
+
+.card {
+    border: none;
+}

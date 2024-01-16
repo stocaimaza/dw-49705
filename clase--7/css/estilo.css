@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Diseño responsive*/
+/*El proyecto se debe ver bien en cualquier ancho de pantalla*/
+
+.tituloMedias {
+    color: blueviolet;
+}
+
+.parrafoMedias {
+    color: blue;
+}
+
+/*La herramienta que usamos se llama "Media Queries" y me permite modificar el estilo dependiendo el ancho de la pantalla. */
+
+/*Si quiero que tenga en cuenta desde 0px hasta 500px */
+
+@media (max-width: 500px) {
+    .tituloMedias {
+        color: pink;
+    }
+
+    .parrafoMedias {
+        color: red;
+    }
+}
+
+/*También podemos trabajar con rangos*/
+/*Para lograr esto usamos el operador and*/
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .tituloMedias {
+        font-size: 40px;
+    }
+
+    .parrafoMedias {
+        font-size: 30px;
+        text-align: center;
+        /* display: none; */
+    }
+}
+
+/*Si queremos imprimir tambien tenemos una opcion*/
+
+@media print and (min-width: 300px) {
+    .tituloMedias {
+        color: black;
+    }
+
+    .parrafoMedias {
+        font-size: 16px;
+        color: black;
+    }
+}
+
+/*También podemos configurar estilos dependiendo la orientacion de la pantalla */
+
+@media screen and (orientation: landscape) {
+
+    /*Estilos en CSS para pantallas en modo horizontal */
+    .tituloMedias {
+        text-transform: uppercase;
+    }
+}
+
+
+/*MOBILE FIRST */
+/*Comenzamos a trabajar desde la pantallita mas chica y vamos creciendo en tamaño */
+
+body {
+    text-align: center;
+}
+
+header {
+    background-color: #808000;
+    grid-area: header;
+}
+
+nav {
+    background-color: #008080;
+    grid-area: nav;
+}
+
+main {
+    background-color: #C0C0C0;
+    grid-area: main;
+    height: 300px;
+}
+
+.primerSeccion {
+    background-color: #808080;
+    grid-area: seccionA;
+    height: 200px;
+}
+
+.segundaSeccion {
+    background-color: #ff0000;
+    grid-area: seccionB;
+    height: 200px;
+}
+
+aside {
+    background-color: #273C2C;
+    grid-area: publi;
+}
+
+footer {
+    background-color: #FFFF00;
+    grid-area: footer;
+    height: 200px;
+}
+
+/*VERSION TABLETA */
+
+@media (min-width: 768px) {
+    .gridPadre {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav seccionA"
+        "nav seccionB"
+        "publi main"
+        "footer footer"
+        ;
+    }
+}
+
+/*VERSIÓN ESCRITORIO */
+
+@media (min-width: 1024px) {
+    .gridPadre {
+        grid-template-areas: 
+        "header header header"
+        "nav nav main"
+        "publi seccionA seccionB"
+        "footer footer footer"
+        ;
+    }
+}

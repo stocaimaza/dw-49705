@@ -1,0 +1,117 @@
+/*camelCase*/
+
+.primeraOpcion {
+    font-size: 60px;
+}
+
+.segundaOpcion {
+    color: cadetblue;
+}
+
+.usoDisplay {
+    display: block;
+}
+
+.transformamosInline {
+    display: inline;
+}
+
+/***** BOX MODELLING *****/
+
+/*BORDER:  linea divisoria del contenedor*/
+/*MARGIN: todo lo que esta desde el limite hacia afuera */
+/*PADDING: todo lo que esta desde el limite hacia adentro */
+/*
+top = arriba
+bottom = abajo
+left = izq
+right = derecha
+*/
+
+.contenedor {
+    background-color: pink;
+
+    /* border: blue solid 5px; */
+    /* border-top: 3px black solid;
+    border-left: green 2px dotted;
+    border-right: 4px inset red;
+    border-bottom: 6px blueviolet solid; */
+    border: 8px solid black;
+    border-radius: 20px;
+
+    /*Margin*/
+
+    /* margin: 50px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-right: 30px;
+    margin-left: 35px; */
+    margin: 40px 30px 20px 10px;
+    margin: 60px 30px;
+
+    /*PADDING*/
+    /* padding: 35px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 15px; */
+    /* padding: 60px 50px 40px 30px; */
+    padding: 30px 60px;
+
+}
+
+/*POSITION*/
+
+.cajaPrincipal {
+    background-color: bisque;
+    border: 2px black solid;
+    /*width: ancho*/
+    /*height: alto*/
+    height: 620px;
+
+    position:relative;
+    
+    
+}
+
+
+.caja {
+    background-color: gray;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+/*Position Relative*/
+
+.itemUno {
+    position: relative;
+    top: 50px;
+    left: 80px;
+}
+
+
+/*Position Absolute */
+
+.itemDos {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+
+/*Position Fixed */
+
+.itemTres {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/*Position Sticky*/
+
+.itemCuatro {
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,200 @@
+/* * {
+    border: 1px solid red;
+}
+ */
+
+/*PSEUDOCLASES*/
+/*
+Una pseudoclase es una palabra clave especial que se utiliza para seleccionar y aplicar estilos a elementos en función de su estado o posición en el documento. 
+*/
+
+.parrafoConHover {
+    color: red;
+    font-size: 40px;
+    transition: all 0.3s;
+}
+
+.parrafoConHover:hover {
+    color: blue;
+    font-size: 50px;
+}
+
+/*Ejemplo con boton*/
+
+.btnHover {
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fafafa;
+    background-color: #F51A17;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btnHover:hover {
+    background-color: #D83D3A;
+}
+
+/*First Child*/
+
+.contenedor p:first-child {
+    color: rgb(211, 231, 96);
+}
+
+/*Last Child*/
+
+.contenedor p:last-child {
+    color: blue;
+}
+
+/*NTH-CHILD()*/
+.contenedor p:nth-child(2) {
+    color: blueviolet;
+}
+
+/*NOT*/
+
+.contenedor p:not(.curso) {
+    font-size: 35px;
+}
+
+/*LINK Y VISITED*/
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: black;
+}
+
+/* ACTIVE */
+
+.btnActive:active {
+    background-color: yellowgreen;
+}
+
+/*FOCUS*/
+
+input:focus {
+    background-color: aquamarine;
+}
+
+/*PSEUDOELEMENTOS*/
+/*Los pseudoelementos son una caracteristica de CSS que nos permite agregar contenido o estilos a determinadas partes específicas de un elemento.*/
+
+/* h2::first-letter {
+    text-transform: uppercase;
+    color: red;
+}
+
+h2::before {
+    content: "Hoy vemos ";
+}
+
+h2::after {
+    content: "y tambien pseudoclases";
+} */
+
+/*UNIDADES DE MEDIDA*/
+
+.cajita {
+    background-color: #F51A17;
+    width: 50vw;
+    height: 50vh;
+}
+
+/*Unidades de medida absolutas: px*/
+/*Unidades de medida relativas: %, vw, vh, rem */
+
+/*TEXTOS: */
+
+.px {
+    font-size: 20px;
+}
+
+.rem {
+    font-size: 2rem;
+}
+
+/*1rem equivale a 16px */
+
+html {
+    font-size: 62.5%;
+}
+
+/*METODOLOGÍA BEM*/
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.tarjeta__imagen {
+    width: 100%;
+}
+
+.tarjeta__titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.tarjeta__descripcion {
+    margin-bottom: 16px;
+}
+
+
+.tarjeta__boton {
+    background-color: #007bff;
+    color: #fafafa;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tarjeta__boton:hover {
+    background-color: #0069d9;
+}
+
+/*Modificador: */
+
+.tarjeta--producto {
+    max-width: 400px;
+}
+
+.tarjeta__titulo--color {
+    color: blue;
+}
+
+/*OVERFLOW*/
+
+.cajaContenedora {
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.cajaContenedora p{
+    font-size: 40px;
+}
+/*1) Revisa que elemento sobresale o rompe el diseño*/
+/*2) Aplicale al body overflow:hidden */
+
+
+/*Aplicamos Fuentes locales: */
+
+@font-face {
+    font-family: Old London;
+    src: url("../fuentes/OldLondon.ttf");
+}
+
+.fuenteNueva {
+    font-family: Old London;
+    font-size: 50px;
+}

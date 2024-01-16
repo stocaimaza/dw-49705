@@ -1,0 +1,11 @@
+/*Mapas*/
+//el map es una colección de variables. 
+
+$mapRedes: (facebook: red, instagram:blue, twitter: yellow); 
+
+@each $redSocial, $colorRedSocial in $mapRedes {
+    .#{$redSocial} {
+        color: $colorRedSocial;
+    }
+}
+

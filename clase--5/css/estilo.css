@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/*************** FLEXBOX *****************/
+
+.padreFlex {
+    background-color: bisque;
+    border: 3px black solid;
+    width: 800px;
+    height: 600px;
+    border-radius: 4px;
+    margin: auto;
+
+    /*Aplicamos flexbox*/
+    display: flex;
+    /*Activamos el sistema de Flexbox*/
+    /*Por default se posicionan los elementos hijitos en fila (row)*/
+    flex-direction: row;
+
+    /* flex-direction: me permite indicar en que dirección se acomodan mis elementos hijos */
+
+    flex-wrap: wrap;
+    /*flex-wrap: me permite activar el sistema multilinea */
+
+    /*flex-flow: es una forma abreviada de configurar la direccion de los elementos hijos y si el sistema es multilinea*/
+
+    flex-flow: row wrap;
+
+    /*justify-content: si flex-direction es row ordeno los elementos hijos en el eje horizontal */
+    justify-content: flex-start;
+
+    /* Los valores más utilizados son: flex-start, flex-end, center y los space */
+
+    /*aling-items: si flex-direction es row ordeno en el eje vertical*/
+
+    align-items: flex-start;
+
+    /*Los valores más utilizados son: flex-start, flex-end, center*/
+
+    align-content: center;
+
+
+
+}
+
+.hijoFlex {
+    background-color: chocolate;
+    height: 150px;
+    width: 150px;
+    border: 1px black dotted;
+    border-radius: 4px;
+}
+
+.hijoFlex p {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/*Utilizamos la propiedad ORDER en los elementos hijos*/
+
+.primero{
+    order: 3;
+}
+
+.segundo {
+    order: 1;
+}
+
+.tercero {
+    order: 2;
+}
+
+/********** CODER CURSOS **********/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: #fafafa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.tienda {
+    background-color: #84bdf3;
+    padding: 9px 25px;
+    border-radius: 50px;
+}
+
+/*BOTONITO DE WHATSAPP*/
+
+.logoWhatsapp {
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*BANNER*/
+
+.banner {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    padding: 100px;
+}

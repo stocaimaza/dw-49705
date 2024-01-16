@@ -1,0 +1,33 @@
+/*MIXIN*/
+/*Estos pueden ser con parametros o sin parametros*/
+
+//MIXIN SIN PARAMETROS: 
+
+@mixin anclas {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    color: red;
+    @include flexCenter; 
+}
+
+//MIXIN CON PARAMETROS: 
+
+@mixin parrafoConParametros($size, $alineacion) {
+    font-size: $size;
+    text-align: $alineacion;
+}
+
+.parrafosConHambre {
+    @include parrafoConParametros(50px, right)
+}
+

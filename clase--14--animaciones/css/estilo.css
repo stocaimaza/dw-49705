@@ -1,0 +1,176 @@
+/*Estilo a las cajas*/
+
+.item {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+/*GRADIENTES*/
+/*Son fondos en degradé*/
+
+/*Pueden ser lineales o radiales*/
+
+/*LINEAL*/
+
+.cajaA {
+    /* background: linear-gradient(to right, yellow, red, blue, green, gray, pink); */
+    background: linear-gradient(to right top, #3E5151, #DECBA4);
+}
+
+/*Se agregan los 3 valores: la dirección, y los dos colores iniciales*/
+/*Pueden agregar todos los colores que quieran*/
+
+/*Su valor predeterminado es de arriba hacia abajo*/
+
+
+/*También lo podemos usar en botones*/
+
+.btn {
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+    padding: 15px;
+    color: #fafafa;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/*RADIALES*/
+
+.cajaB {
+    background-image: radial-gradient(ellipse 250px 100px, #e96443, #904e95);
+}
+
+.cajaC {
+    background: radial-gradient(#00F260, #0575E6);
+}
+
+/* TRANSFORMACIONES */
+/*Una transformación es una modificación en la forma en que se ve un elemento pero no el lugar que ocupa realmente*/
+
+/*Podemos mover un elemento, escalar su tamaño, girarlo*/
+
+/*TRASLADAR UN ELEMENTO*/
+
+.cajaUno {
+    background-color: #904e95;
+    transform: translate(35px, 10px);
+}
+
+/*Primer valor eje x, segundo valor eje y*/
+
+/*ROTAR UN ELEMENTO*/
+
+.cajaDos {
+    background-color: #0575E6;
+    transform: rotate(35deg);
+}
+
+/*Le paso un valor en grados (deg) */
+/*Valor positivo es horario y negativo antihorario*/
+
+/*ESCALAR UN ELEMENTO*/
+
+.cajaTres {
+    background-color: #904e95;
+    transform: scale(1.2, 0.8);
+}
+
+/*Admite dos valores separados por coma*/
+/*El primer valor es el ancho (eje x) */
+/*El segundo valor es el alto (eje y) */
+/*Valores mayores a 1 agrandan*/
+/*Valores entre 0 y 1 achican*/
+
+/*SESGAR UN ELEMENTO*/
+
+.cajaCuatro {
+    background-color: #fc00ff;
+    transform: skew(20deg, 10deg);
+}
+
+/*TRANSICIONES */
+
+.divUno {
+    background-color: #e96443;
+    /* transition: all 0.3s; */
+    transition: height 1s, width 2s;
+}
+
+.divUno:hover {
+    background-color: #3E5151;
+    height: 320px;
+    width: 320px;
+}
+
+.divDos {
+    background-color: #00F260;
+    transition: all 0.8s;
+}
+
+.divDos:hover {
+    transform: rotate(180deg);
+    /* transform: skew(25deg, 25deg); */
+}
+
+/*Animaciones */
+
+/*Una animación es un efecto que se loopea tantas veces como uno quiera*/
+/*No depende de un cambio de estado, el elemento se animará desde qeu se carga la página*/
+
+/*Linea de tiempo: keyframe*/
+
+@keyframes tinkiwinki {
+    0% {
+        width: 220px;
+    }
+
+    25% {
+        width: 240px;
+    }
+
+    50% {
+        width: 260px;
+    }
+
+    75% {
+        width: 280px;
+    }
+
+    100% {
+        width: 300px;
+    }
+}
+
+.animacion {
+    background-color: #3E5151;
+
+    /*NOMBRE DEL KEYFRAME*/
+    animation-name: tinkiwinki;
+
+    /*CANTIDAD DE REPETICIONES*/
+    animation-iteration-count: infinite;
+
+    /*DURACIÓN DE LA ANIMACION*/
+    animation-duration: 2s;
+}
+
+/* EJEMPLO CON TEXTO */
+
+@keyframes texto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+.textoAnimacion {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

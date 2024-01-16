@@ -1,0 +1,18 @@
+/* Condicionales */
+
+$vista: tinkiwinki; 
+
+@if ($vista == escritorio) {
+    body {
+        background-color: gray;
+    }
+}@else if ($vista == movil) {
+    body {
+        background-color: red;
+    }
+}@else {
+    body {
+        background-color: green;
+    }
+}
+
